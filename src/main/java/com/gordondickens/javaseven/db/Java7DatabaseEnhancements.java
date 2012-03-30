@@ -17,10 +17,10 @@ public class Java7DatabaseEnhancements {
             Connection con = DriverManager.getConnection(
                     "jdbc:derby://localhost:1527/contact", "userName", "password");
 
-            logger.debug("Schema: " + con.getSchema());
+            logger.debug("Schema: {}", con.getSchema());
             DatabaseMetaData metaData = con.getMetaData();
 
-            logger.debug("Auto Generated Keys: " + metaData.generatedKeyAlwaysReturned());
+            logger.debug("Auto Generated Keys: {}", metaData.generatedKeyAlwaysReturned());
 
         } catch (SQLException ex) {
             ex.printStackTrace();

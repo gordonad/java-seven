@@ -34,7 +34,7 @@ public class WritingToAFileUsingTheAsynchronousFileChannelClass {
                         public void failed(Throwable e, Object attachment) {
                             System.err.println("Attachment: "
                                     + attachment + " failed with:");
-                            e.printStackTrace();
+                            logger.error("", e);
                         }
                     };
 

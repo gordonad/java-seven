@@ -1,10 +1,14 @@
 package com.gordondickens.javaseven.gui.appletinit;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.applet.Applet;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class SampleApplet extends Applet {
+    private static final Logger logger = LoggerFactory.getLogger(SampleApplet.class);
     BufferedImage image;
     Graphics2D g2d;
 
@@ -18,7 +22,7 @@ public class SampleApplet extends Applet {
         try {
             Thread.sleep(2000);
         } catch (InterruptedException ie) {
-            ie.printStackTrace();
+            logger.error("", ie);
         }
     }
 

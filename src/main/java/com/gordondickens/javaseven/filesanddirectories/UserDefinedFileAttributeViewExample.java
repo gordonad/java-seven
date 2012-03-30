@@ -29,7 +29,7 @@ public class UserDefinedFileAttributeViewExample {
 //            logger.debug(value);
 
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("", e);
         }
     }
 

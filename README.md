@@ -12,3 +12,8 @@ Added use of Logback and SLF4J, refactoring out most of the System.out code.
 Refactored out all of the references to the Windows C: drive.
 
 
+IntelliJ 11 notes:
+------------------
+* Set Compiler to "javac"
+* Additional command line parameters: "-target 1.7" (without quotes)
+

@@ -29,7 +29,7 @@ public class ACLAttributeExample {
                 displayPermissions(entry.permissions());
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("", e);
         }
 
         //There's More Example
@@ -40,7 +40,7 @@ public class ACLAttributeExample {
 //            logger.debug(groupPrincipal.getName());
 //            logger.debug(userPrincipal.getName());
 //        } catch (IOException e) {
-//            e.printStackTrace();
+//            logger.error("", e);
 //        }
 
     }

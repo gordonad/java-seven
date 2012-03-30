@@ -43,7 +43,7 @@ public class CopyingFileExample {
 //            Files.copy(originalDirectory, newDirectory);
 //            logger.debug("Directory copied successfully!");
 //        } catch (IOException e) {
-//            e.printStackTrace();
+//            logger.error("", e);
 //        }
 
         //There's More: Copying from an Input Stream

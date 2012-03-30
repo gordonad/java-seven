@@ -28,7 +28,7 @@ public class UnderstandingTheZipFileSystemProvider {
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("", e);
         }
 
     }

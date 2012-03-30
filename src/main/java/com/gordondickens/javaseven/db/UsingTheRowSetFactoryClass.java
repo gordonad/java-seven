@@ -35,8 +35,7 @@ public class UsingTheRowSetFactoryClass {
             rowSet.execute();
 
             while (rowSet.next()) {
-                logger.debug(rowSet.getInt("ID") + " - "
-                        + rowSet.getString("FIRSTNAME"));
+                logger.debug("{} - {}", rowSet.getInt("ID"), rowSet.getString("FIRSTNAME"));
             }
 
         } catch (SQLException ex) {

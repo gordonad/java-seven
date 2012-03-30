@@ -27,7 +27,7 @@ public class GetOwnerExample {
 //            logger.debug("UserPrincipal set: " + userPrincipal.getName());
 
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("", e);
         }
     }
 }
