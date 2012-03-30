@@ -1,0 +1,16 @@
+.classpath
+derby-home
+derby.log
+.DS_Store
+.externalToolBuilders
+.idea
+*.iml
+*.ipr
+*.iws
+*.log
+.metadata
+.project
+.settings
+surefire*
+*.swp
+target
