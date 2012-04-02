@@ -1,5 +1,6 @@
-package com.gordondickens.javaseven.mbeans;
+package com.gordondickens.javaseven.mxbeans;
 
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -8,10 +9,11 @@ import java.lang.management.OperatingSystemMXBean;
 import java.lang.management.RuntimeMXBean;
 import java.util.List;
 
-public class UsingThePlatformMXBeans {
-    private static final Logger logger = LoggerFactory.getLogger(UsingThePlatformMXBeans.class);
+public class PlatformMXBeansTests {
+    private static final Logger logger = LoggerFactory.getLogger(PlatformMXBeansTests.class);
 
-    public static void main(String[] args) {
+    @Test
+    public void runMe() {
         RuntimeMXBean mxBean = ManagementFactory.getPlatformMXBean(RuntimeMXBean.class);
 
         logger.debug("JVM Name: {}", mxBean.getName());
