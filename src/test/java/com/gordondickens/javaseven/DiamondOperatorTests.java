@@ -19,7 +19,7 @@ import static org.junit.Assert.assertNotNull;
  */
 public class DiamondOperatorTests {
     private static final Logger logger = LoggerFactory.getLogger(DiamondOperatorTests.class);
-    Map<String, List<SimpleBean>> simpleBeans;
+    Map<String, List<SimpleBean>> simpleBeans = new TreeMap<>();
 
     @Before
     public void beforeEachTest() {

@@ -44,7 +44,7 @@ public class ConcurrentLinkedDequeExample {
                     itemName = "Item" + x;
                     itemId = x;
                     deque.add(new Item(itemName, itemId));
-                    logger.debug("New Item Added:" + itemName + " " + itemId);
+                    logger.debug("Item {} Added: '{}' ", itemId, itemName);
                     Thread.currentThread();
                     Thread.sleep(250);
                 }
