@@ -1,5 +1,6 @@
 package com.gordondickens.javaseven.paths;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.slf4j.LoggerFactory;
 
@@ -12,9 +13,12 @@ import java.nio.file.Paths;
 public class ConvertingPathsTests {
     private static final org.slf4j.Logger logger = LoggerFactory.getLogger(ConvertingPathsTests.class);
 
+    @Ignore
     @Test(expected = NoSuchFileException.class)
     public void testMe() {
         try {
+//            String filePath = getClass().getResource("someData.txt").getFile();
+//            logger.debug("***** file Path returned '{}' *****", filePath);
             Path path = Paths.get("/code/java-seven/src/test/resources/someData.txt");
 
             logger.debug("URI path: " + path.toUri());
@@ -25,6 +29,7 @@ public class ConvertingPathsTests {
         }
     }
 
+    @Ignore
     @Test(expected = NoSuchFileException.class)
     public void testMeToo() {
         try {
